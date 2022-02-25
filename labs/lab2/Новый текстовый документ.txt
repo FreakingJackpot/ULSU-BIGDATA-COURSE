@@ -1,0 +1,4 @@
+ration_income['DebtRatio']=ration_income['DebtRatio']*ration_income['MonthlyIncome']
+new_vals=ration_income['DebtRatio']*ration_income['MonthlyIncome']
+csv.loc[ration_income['DebtRatio'],['DebtRatio','MonthlyIncome']]=new_vals
+csv.loc[ration_income['Id'],['DebtRatio']]['DebtRatio']=new_vals
